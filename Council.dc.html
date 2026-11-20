@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Council profile</title>
 <script src="./_runtime/react.js"></script>
 <script src="./_runtime/react-dom.js"></script>
@@ -153,15 +154,15 @@ a{color:#0E55DE}a:hover{color:#242140}
       </div>
       <div style="border: 1px solid #D6D3DE; padding: 8px 20px">
         <sc-for list="{{rows}}" as="r" hint-placeholder-count="9">
-          <div style="display: grid; grid-template-columns: minmax(150px, 300px) 48px minmax(0, 1fr) 150px; gap: 16px; align-items: center; padding: 12px 0; border-bottom: 1px solid #D6D3DE">
-            <span style="font-size: 15px">{{r.label}}</span>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; padding: 12px 0; border-bottom: 1px solid #D6D3DE">
+            <span style="flex: 1 1 150px; max-width: 300px; font-size: 15px">{{r.label}}</span>
             <span style="{{r.chip}}">{{r.score}}</span>
-            <div role="img" aria-label="{{r.aria}}" style="position: relative; height: 16px; background: #EBE9EE">
+            <div role="img" aria-label="{{r.aria}}" style="flex: 1 1 100px; min-width: 0; position: relative; height: 16px; background: #EBE9EE">
               <div style="{{r.bar}}"></div>
               <div style="{{r.eng}}"></div>
               <div style="{{r.reg}}"></div>
             </div>
-            <span style="font-size: 13px; color: #5C5975; text-align: right">England {{r.e}} · Region {{r.g}}</span>
+            <span style="flex: 0 0 150px; font-size: 13px; color: #5C5975; text-align: right">England {{r.e}} · Region {{r.g}}</span>
           </div>
         </sc-for>
       </div>
