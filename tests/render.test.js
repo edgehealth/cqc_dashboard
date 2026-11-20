@@ -14,8 +14,10 @@ async function capture(kind) {
   const tick = () => new Promise((r) => requestAnimationFrame(() => setTimeout(r, 0)));
   const hash = async (s) => [...new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s)))].slice(0, 8).map((b) => b.toString(16).padStart(2, '0')).join('');
   const root = () => document.querySelector('#dc-root');
-  // Template bookkeeping attributes are not visible and may be renumbered; ignore them.
-  const snapshot = () => root().innerHTML.replace(/ data-dc-[a-z-]+="[^"]*"/g, '').replace(/<!--[\s\S]*?-->/g, '') + '|' + [...document.querySelectorAll('select')].map((s) => s.value).join(',');
+  // Ignore markup the runtime adds for its own bookkeeping, which a visitor cannot see:
+  // template index attributes, comments, and the unstyled <span class="sc-interp"> it
+  // wraps around every calculated value. The text inside those spans is kept.
+  const snapshot = () => root().innerHTML.replace(/ data-dc-[a-z-]+="[^"]*"/g, '').replace(/<!--[\s\S]*?-->/g, '').replace(/<span class="sc-interp">([^<]*)<\/span>/g, '$1') + '|' + [...document.querySelectorAll('select')].map((s) => s.value).join(',');
   const until = async (ok, what) => { for (let i = 0; i < 200; i++) { if (ok()) return; await tick(); } throw new Error('timed out waiting for ' + what); };
   const states = {};
   const record = async (key) => { await tick(); states[key] = await hash(snapshot()); };

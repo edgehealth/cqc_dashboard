@@ -19,4 +19,12 @@ Do not author or co-author commits as Claude in this repository.
 
 Pushes to `main` deploy straight to the public GitHub Pages site. The workflow
 in `.github/workflows/static.yml` publishes only the top-level `*.html` files, `sitemap.xml`,
-`_runtime/` and `assets/`. Anything else in the repository is not published.
+`_runtime/`, `assets/` and `data/`. Anything else in the repository is not
+published.
+
+## Data and tests
+
+The dashboard data lives only in `data/*.js`; do not paste data into the pages.
+Run `npm test` before pushing any change to the pages, the data or the
+workflow. Update the baseline (`npm run test:update-baseline`) only for a
+change the person you are working for intended, and say that you did.
