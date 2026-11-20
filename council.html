@@ -1,0 +1,288 @@
+<!doctype html>
+<meta charset="utf-8"><style data-dc-design-system-vars>@layer{:root{--eh-dark-blue:#242140;--eh-white:#ffffff;--eh-pink:#e54f96;--eh-blue:#38b5ff;--eh-dark-pink:#b62a8e;--eh-light-pink:#f2a7cb;--eh-dark-blue-secondary:#0e55de;--eh-light-blue:#9cdaff;--eh-green:#16ddae;--eh-green-light:#8aeed6;--eh-purple:#830eff;--eh-purple-light:#c186ff;--eh-orange:#fe6253;--eh-orange-light:#feb0a9;--surface:#ffffff;--surface-raised:#ebe9ee;--surface-dark:#242140;--ink:#242140;--ink-muted:#5c5975;--ink-on-dark:#ffffff;--ink-on-pink:#ffffff;--accent:#e54f96;--accent-text:#b62a8e;--link:#0e55de;--border:#d6d3de;--focus:#0e55de;--data-1:#e54f96;--data-2:#38b5ff;--data-3:#16ddae;--data-4:#830eff;--data-5:#fe6253;--data-6:#b62a8e;--data-1-tint:#f2a7cb;--data-2-tint:#9cdaff;--data-3-tint:#8aeed6;--data-4-tint:#c186ff;--data-5-tint:#feb0a9;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-6:24px;--space-8:32px;--space-12:48px;--space-16:64px;--radius-0:0px;--radius-quadrant:100%;--radius-pill:999px;--font-sans:"Be Vietnam Pro", Arial, Helvetica, sans-serif;--font-system:Arial, Helvetica, sans-serif;--text-display:300 48px/52px var(--font-sans);--text-h1:300 36px/42px var(--font-sans);--text-h2:400 26px/32px var(--font-sans);--text-h3:700 18px/24px var(--font-sans);--text-eyebrow:400 15px/20px var(--font-sans);--text-intro:300 18px/26px var(--font-sans);--text-body:400 15px/22px var(--font-sans);--text-body-bold:700 15px/22px var(--font-sans);--text-small:400 13px/18px var(--font-sans);--text-caption:400 11px/14px var(--font-sans);--text-stat:300 40px/44px var(--font-sans);--text-button:700 15px/20px var(--font-sans);}}</style>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./assets/fonts.css">
+<title>Council profile | Learning from CQC local authority assessments</title>
+<meta name="description" content="Look up any council’s CQC local authority assessment: its scores on the 9 quality statements, what CQC found, and higher-scoring councils to learn from.">
+<link rel="canonical" href="https://edgehealth.github.io/cqc_dashboard/council.html">
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="./assets/favicon.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Edge Health">
+<meta property="og:title" content="Council profile | Learning from CQC local authority assessments">
+<meta property="og:description" content="Look up any council’s CQC local authority assessment: its scores on the 9 quality statements, what CQC found, and higher-scoring councils to learn from.">
+<meta property="og:url" content="https://edgehealth.github.io/cqc_dashboard/council.html">
+<meta property="og:image" content="https://edgehealth.github.io/cqc_dashboard/assets/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Learning from CQC local authority assessments. Edge Health.">
+<meta name="twitter:card" content="summary_large_image">
+<script src="./data/councils.js"></script>
+<script src="./data/statements.js"></script>
+<script src="./data/quotes.js"></script>
+<script src="./data/examples.js"></script>
+<script src="./_runtime/react.js"></script>
+<script src="./_runtime/react-dom.js"></script>
+<script src="./_runtime/support.js"></script>
+<noscript><style>x-dc{display:none}</style></noscript>
+</head>
+<body>
+<noscript><p style="max-width: 640px; margin: 48px auto; padding: 0 24px; font: 400 18px/1.5 'Be Vietnam Pro', Arial, Helvetica, sans-serif; color: #242140">This dashboard needs JavaScript to show its charts and tables. Please turn JavaScript on in your browser and reload the page.</p></noscript>
+<x-dc>
+<helmet>
+<style>
+body{margin:0}
+a{color:#0E55DE}a:hover{color:#242140}
+:focus-visible{outline:2px solid #0E55DE;outline-offset:2px}
+</style>
+</helmet>
+<div style="font-family: 'Be Vietnam Pro', Arial, Helvetica, sans-serif; color: #242140; background: #FFFFFF; min-height: 100vh">
+  <header>
+  <div style="border-bottom: 1px solid #D6D3DE; background: #FFFFFF">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 16px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+      <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap">
+        <img src="./assets/6a800d17d0ea7ee4d047f0248e0653db.svg" alt="Edge Health" style="height: 28px; width: auto; display: block">
+        <span style="font-size: 14px; color: #5C5975">Learning from CQC local authority assessments</span>
+      </div>
+      <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 4px">
+        <a href="./" style="padding: 12px 14px; font-size: 14px; text-decoration: none; color: #5C5975">National overview</a>
+        <a href="council.html" aria-current="page" style="padding: 12px 14px; font-size: 14px; font-weight: 600; text-decoration: none; color: #242140; border-bottom: 3px solid #E54F96">Council profile</a>
+        <a href="statements.html" style="padding: 12px 14px; font-size: 14px; text-decoration: none; color: #5C5975">Quality statements</a>
+        <a href="method.html" style="padding: 12px 14px; font-size: 14px; text-decoration: none; color: #5C5975">Method</a>
+      </nav>
+    </div>
+  </div>
+  <div style="background: #EBE9EE; border-bottom: 1px solid #D6D3DE">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 10px 32px; font-size: 14px; color: #242140">Based on all 152 published CQC local authority assessment reports. Scores and findings were extracted using AI, and a sample was checked manually. <a href="method.html" style="color: #0E55DE">How this was done</a></div>
+  </div>
+  </header>
+  <main style="max-width: 1280px; margin: 0 auto; padding: 32px 32px 64px; display: flex; flex-direction: column; gap: 32px">
+    <section style="display: flex; flex-direction: column; gap: 8px; max-width: 520px">
+      <label for="council-select" style="font-size: 16px; font-weight: 700">Select your council</label>
+      <select id="council-select" value="{{current}}" onChange="{{pickCouncil}}" style="height: 48px; padding: 0 12px; border: 1px solid #5C5975; font-size: 16px; font-family: inherit; background: #FFFFFF; color: #242140">
+        <sc-for list="{{options}}" as="o" hint-placeholder-count="8"><option value="{{o}}">{{o}}</option></sc-for>
+      </select>
+    </section>
+
+    <section style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 24px; border-top: 1px solid #D6D3DE; padding-top: 24px">
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <h1 style="margin: 0; font-size: 36px; font-weight: 300; letter-spacing: -0.02em">{{c.n}}</h1>
+        <p style="margin: 0; font-size: 16px; color: #5C5975">{{c.r}} · Report published {{c.pub}} · <a href="{{reportUrl}}">Read the report on the CQC website</a></p>
+        <sc-if value="{{c.stale}}" hint-placeholder-val="{{ false }}"><p style="margin: 0; font-size: 14px; color: #5C5975">CQC has since published a newer report for this council.</p></sc-if>
+      </div>
+      <div style="display: flex; gap: 16px; flex-wrap: wrap">
+        <div style="border: 1px solid #D6D3DE; padding: 16px 20px; display: flex; flex-direction: column; gap: 4px; min-width: 150px">
+          <span style="font-size: 14px; color: #5C5975">Overall score</span>
+          <span style="font-size: 36px; font-weight: 700">{{c.pct}}%</span>
+        </div>
+        <div style="border: 1px solid #D6D3DE; padding: 16px 20px; display: flex; flex-direction: column; gap: 8px; min-width: 200px">
+          <span style="font-size: 14px; color: #5C5975">Overall rating</span>
+          <span style="{{ratingStyle}}">{{c.rating}}</span>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="focus-h" style="display: flex; flex-direction: column; gap: 16px">
+      <div style="display: flex; flex-direction: column; gap: 4px">
+        <h2 id="focus-h" style="margin: 0; font-size: 24px; font-weight: 400">Where to focus, and who to learn from</h2>
+        <p style="margin: 0; font-size: 15px; color: #5C5975">Select a quality statement. For areas to improve, see what CQC found and what higher-scoring councils did. For strengths, see what this council does well and who could learn from it.</p>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+        <div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 20px">
+          <div role="group" aria-labelledby="area-h" style="display: flex; flex-direction: column; gap: 10px">
+            <h3 id="area-h" style="margin: 0; font-size: 16px">Scored 1 or 2 (shortfalls): areas to improve</h3>
+            <sc-if value="{{noAreas}}" hint-placeholder-val="{{ false }}"><p style="margin: 0; font-size: 14px; color: #5C5975">None. Every statement scored 3 or 4.</p></sc-if>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px">
+              <sc-for list="{{areas}}" as="t" hint-placeholder-count="4">
+                <button type="button" aria-pressed="{{t.pressed}}" onClick="{{t.pick}}" style="{{t.style}}">{{t.label}} ({{t.score}})</button>
+              </sc-for>
+            </div>
+          </div>
+          <div role="group" aria-labelledby="str-h" style="display: flex; flex-direction: column; gap: 10px">
+            <h3 id="str-h" style="margin: 0; font-size: 16px">Scored 3 or 4 (good or exceptional): strengths to share</h3>
+            <sc-if value="{{noStrengths}}" hint-placeholder-val="{{ false }}"><p style="margin: 0; font-size: 14px; color: #5C5975">None. Every statement scored 1 or 2.</p></sc-if>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px">
+              <sc-for list="{{strengths}}" as="t" hint-placeholder-count="5">
+                <button type="button" aria-pressed="{{t.pressed}}" onClick="{{t.pick}}" style="{{t.style}}">{{t.label}} ({{t.score}})</button>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+
+        <div aria-live="polite" style="flex: 999 1 600px; min-width: 0; border: 1px solid #D6D3DE; padding: 24px; display: flex; flex-direction: column; gap: 20px">
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <span style="font-size: 15px; color: #B62A8E">{{p.kind}}</span>
+            <h3 style="margin: 0; font-size: 22px; line-height: 1.3">{{p.label}}: scored {{p.score}}</h3>
+            <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #5C5975">{{p.compare}}</p>
+          </div>
+
+          <sc-if value="{{p.isArea}}" hint-placeholder-val="{{ true }}">
+            <div style="display: flex; flex-direction: column; gap: 10px">
+              <h4 style="margin: 0; font-size: 17px">From CQC’s report on {{c.n}}</h4>
+              <sc-for list="{{p.quotes}}" as="q" hint-placeholder-count="3">
+                <blockquote style="margin: 0; padding: 12px 16px; background: #EBE9EE; border-left: 4px solid #B62A8E; display: flex; flex-direction: column; gap: 4px">
+                  <span style="font-size: 15px; line-height: 1.55">{{q.s}}</span>
+                  <span style="font-size: 13px; color: #5C5975"><a href="{{reportUrl}}" style="color: inherit; text-underline-offset: 2px">{{c.n}} report</a>, page {{q.p}}</span>
+                </blockquote>
+              </sc-for>
+            </div>
+          </sc-if>
+
+          <div style="display: flex; flex-direction: column; gap: 12px">
+            <h4 style="margin: 0; font-size: 17px">{{p.exHeading}}</h4>
+            <p style="margin: 0; font-size: 14px; color: #5C5975">{{p.exNote}}</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px">
+              <sc-for list="{{p.examples}}" as="e" hint-placeholder-count="3">
+                <article style="border: 1px solid #D6D3DE; padding: 16px; display: flex; flex-direction: column; gap: 8px">
+                  <span style="font-size: 13px; color: #B62A8E">{{e.area}}</span>
+                  <p style="margin: 0; font-size: 14px; line-height: 1.55">{{e.text}}</p>
+                  <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: auto">
+                    <sc-if value="{{e.other}}" hint-placeholder-val="{{ true }}"><a href="{{e.href}}" style="font-size: 14px; font-weight: 700; color: #242140; text-decoration: underline; text-decoration-color: #5C5975; text-underline-offset: 2px">{{e.c}}</a></sc-if><sc-if value="{{e.self}}" hint-placeholder-val="{{ false }}"><span style="font-size: 14px; font-weight: 700">{{e.c}}</span></sc-if>
+                    <span style="{{e.chip}}">Scored {{e.score}}</span>
+                  </div>
+                  <span style="font-size: 13px; color: #5C5975"><a href="{{e.report}}" style="color: inherit; text-underline-offset: 2px">{{e.c}} report</a>, page {{e.p}}</span>
+                </article>
+              </sc-for>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 10px; border-top: 1px solid #D6D3DE; padding-top: 16px">
+            <h4 style="margin: 0; font-size: 17px">{{p.peerHeading}}</h4>
+            <sc-if value="{{p.noPeers}}" hint-placeholder-val="{{ false }}"><p style="margin: 0; font-size: 14px; color: #5C5975">{{p.noPeerText}}</p></sc-if>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px">
+              <sc-for list="{{p.peers}}" as="q" hint-placeholder-count="4">
+                <button type="button" onClick="{{q.go}}" style="{{q.style}}">{{q.n}} (scored {{q.s}})</button>
+              </sc-for>
+            </div>
+            <p style="margin: 0; font-size: 13px; color: #5C5975">{{p.peerNote}}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="compare-h" style="display: flex; flex-direction: column; gap: 16px">
+      <div style="display: flex; flex-direction: column; gap: 4px">
+        <h2 id="compare-h" style="margin: 0; font-size: 24px; font-weight: 400">How {{c.n}} compares</h2>
+        <p style="margin: 0; font-size: 15px; color: #5C5975">CQC’s score on each quality statement, from 1 (significant shortfalls) to 4 (exceptional standard), against the average for England and for the region.</p>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; font-size: 13px; color: #5C5975">
+        <span style="display: flex; align-items: center; gap: 8px"><span style="width: 24px; height: 12px; background: #E54F96"></span>{{c.n}}</span>
+        <span style="display: flex; align-items: center; gap: 8px"><span style="width: 3px; height: 18px; background: #242140"></span>England average</span>
+        <span style="display: flex; align-items: center; gap: 8px"><span style="width: 10px; height: 10px; border-radius: 50%; background: #FFFFFF; border: 2px solid #242140"></span>{{c.r}} average</span>
+      </div>
+      <div style="border: 1px solid #D6D3DE; padding: 8px 20px">
+        <sc-for list="{{rows}}" as="r" hint-placeholder-count="9">
+          <div style="display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; padding: 12px 0; border-bottom: 1px solid #D6D3DE">
+            <span style="flex: 1 1 150px; max-width: 300px; font-size: 15px">{{r.label}}</span>
+            <span style="{{r.chip}}">{{r.score}}</span>
+            <div role="img" aria-label="{{r.aria}}" style="flex: 1 1 100px; min-width: 0; position: relative; height: 16px; background: #EBE9EE">
+              <div style="{{r.bar}}"></div>
+              <div style="{{r.eng}}"></div>
+              <div style="{{r.reg}}"></div>
+            </div>
+            <span style="flex: 0 0 150px; font-size: 13px; color: #5C5975; text-align: right">England {{r.e}} · Region {{r.g}}</span>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+  </main>
+  <footer style="border-top: 1px solid #D6D3DE">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 24px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 13px; color: #5C5975">
+      <a href="https://www.edgehealth.co.uk/" style="color: inherit">edgehealth.co.uk</a>
+      <span>©2026 Edge Health</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1900}}'>
+const slug = (x) => x.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const councilFromHash = () => { const c = COUNCILS.find((x) => slug(x.n) === location.hash.slice(1)); return c ? c.n : null; };
+const setTitle = (n) => { document.title = n + ' council profile | Learning from CQC local authority assessments'; };
+class Component extends DCLogic {
+  constructor(props) { super(props); const h = councilFromHash(); if (h) setTitle(h); this.state = { council: h || COUNCILS[0].n, sel: null }; }
+  componentDidMount() { this.onHash = () => { const n = councilFromHash() || (location.hash.length < 2 ? COUNCILS[0].n : null); if (n && n !== this.state.council) this.go(n); }; window.addEventListener('hashchange', this.onHash); }
+  componentWillUnmount() { window.removeEventListener('hashchange', this.onHash); }
+  go(n) { setTitle(n); this.setState({ council: n, sel: null }); }
+  pick(n) { location.hash = slug(n); this.go(n); }
+  renderVals() {
+    const colours = { 1: ['#B62A8E', '#FFFFFF'], 2: ['#F2A7CB', '#242140'], 3: ['#9CDAFF', '#242140'], 4: ['#0E55DE', '#FFFFFF'] };
+    const byName = {}; COUNCILS.forEach((x) => { byName[x.n] = x; });
+    const c = byName[this.state.council];
+    const chip = (s) => 'width: 36px; height: 32px; display: flex; align-items: center; justify-content: center; font-weight: 700; background: ' + colours[s][0] + '; color: ' + colours[s][1];
+    const pill = (s) => 'padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; white-space: nowrap; background: ' + colours[s][0] + '; color: ' + colours[s][1];
+    const avg = (list, i) => list.reduce((a, x) => a + x.s[i], 0) / list.length;
+    const regionList = COUNCILS.filter((x) => x.r === c.r);
+    const items = STATEMENTS.map((st, i) => ({ i, st, score: c.s[i] }));
+    const areasL = items.filter((x) => x.score <= 2);
+    const strengthsL = items.filter((x) => x.score >= 3);
+    let selIdx = this.state.sel;
+    if (selIdx === null || selIdx === undefined) selIdx = (areasL[0] || strengthsL[0]).i;
+    const btn = (x) => {
+      const on = x.i === selIdx; const isArea = x.score <= 2;
+      return { label: x.st.label, score: x.score, pressed: on ? 'true' : 'false', pick: () => this.setState({ sel: x.i }),
+        style: 'min-height: 44px; padding: 0 14px; border-radius: 999px; font-size: 14px; font-family: inherit; cursor: pointer; text-align: left; color: #242140; background: ' + (isArea ? '#F2A7CB' : '#9CDAFF') + '; border: 1px solid ' + (on ? '#242140' : 'transparent') + '; font-weight: ' + (on ? '700' : '400') + '; box-shadow: ' + (on ? 'inset 0 0 0 1px #242140' : 'none') };
+    };
+    const cur = items[selIdx];
+    const isArea = cur.score <= 2;
+    const Q = QUOTES[c.n][selIdx];
+    const kw = cur.st.kw; const areaName = { other: 'Other practice' }; cur.st.themes.forEach((t) => { areaName[t.t] = t.name; });
+    const hits = {}; Object.keys(kw).forEach((t) => { const m = (Q.m || '').match(new RegExp(kw[t], 'gi')); hits[t] = m ? m.length : 0; });
+    const higherN = COUNCILS.filter((x) => x.s[selIdx] > cur.score).length;
+    const lowerN = COUNCILS.filter((x) => x.s[selIdx] < cur.score).length;
+    const compare = (isArea ? higherN + ' of ' + COUNCILS.length + ' councils scored higher on this statement. ' : lowerN + ' of ' + COUNCILS.length + ' councils scored lower on this statement. ') + cur.st.desc;
+    const toCard = (n, e) => ({ c: n, self: n === c.n, other: n !== c.n, href: '#' + slug(n), report: 'https://www.cqc.org.uk/care-services/local-authority-assessment-reports/' + byName[n].u, p: e[0], text: e[1], area: e[3] ? (areaName[e[2]] || '') : '', score: byName[n].s[selIdx], chip: pill(byName[n].s[selIdx]) });
+    let examples;
+    if (isArea) {
+      const all = [];
+      COUNCILS.forEach((x) => { if (x.n !== c.n && x.s[selIdx] > cur.score) POOL[x.n][selIdx].forEach((e) => all.push({ n: x.n, e, rel: hits[e[2]] || 0, reg: x.r === c.r ? 1 : 0, cur: e[3], sc: x.s[selIdx] })); });
+      all.sort((a, b) => b.rel - a.rel || b.cur - a.cur || b.reg - a.reg || b.sc - a.sc);
+      const seenC = {}, seenT = {}, pick = [];
+      all.forEach((z) => { if (pick.length < 3 && !seenC[z.n] && !seenT[z.e[2]]) { pick.push(z); seenC[z.n] = 1; seenT[z.e[2]] = 1; } });
+      all.forEach((z) => { if (pick.length < 3 && !seenC[z.n]) { pick.push(z); seenC[z.n] = 1; } });
+      examples = pick.map((z) => toCard(z.n, z.e));
+    } else {
+      examples = POOL[c.n][selIdx].map((e) => toCard(c.n, e));
+    }
+    const peerAll = isArea
+      ? regionList.filter((x) => x.n !== c.n && x.s[selIdx] > cur.score).sort((a, b) => b.s[selIdx] - a.s[selIdx] || b.pct - a.pct)
+      : regionList.filter((x) => x.n !== c.n && x.s[selIdx] < cur.score).sort((a, b) => a.s[selIdx] - b.s[selIdx] || a.pct - b.pct);
+    const peerList = peerAll.slice(0, 4);
+    const more = peerAll.length - peerList.length;
+    const peerBtn = (x) => ({ n: x.n, s: x.s[selIdx], go: () => this.pick(x.n),
+      style: 'min-height: 40px; padding: 0 12px; border-radius: 999px; font-size: 14px; font-family: inherit; cursor: pointer; border: 1px solid #5C5975; background: #FFFFFF; color: #0E55DE' });
+    const p = {
+      label: cur.st.label, score: cur.score, compare, isArea, quotes: Q.q.map((x) => ({ p: x[0], s: x[1] })),
+      kind: isArea ? 'Area to improve' : 'Strength to share',
+      exHeading: isArea ? 'What higher-scoring councils did' : ('What ' + c.n + ' does well'),
+      exNote: isArea ? 'In CQC’s words, from councils that scored higher. Chosen to match the issues CQC raised for this council where possible.' : 'In CQC’s words. The same examples are shown to other councils as practice to learn from.',
+      examples,
+      peerHeading: isArea ? ('Councils in ' + c.r + ' to talk to') : ('Councils in ' + c.r + ' that could learn from you'),
+      peers: peerList.map(peerBtn), noPeers: peerList.length === 0,
+      noPeerText: isArea ? 'No other council in the region scored higher on this statement. See the examples above from other regions.' : 'No other council in the region scored lower on this statement.',
+      peerNote: (isArea ? 'These councils scored higher than ' + c.n + ' on this statement.' : 'These councils scored lower than ' + c.n + ' on this statement.') + (more > 0 ? ' ' + more + ' more in the region.' : '') + ' Select one to see its profile.'
+    };
+    const ratingCol = { 'Outstanding': ['#0E55DE', '#FFFFFF'], 'Good': ['#9CDAFF', '#242140'], 'Requires improvement': ['#F2A7CB', '#242140'], 'Inadequate': ['#B62A8E', '#FFFFFF'] }[c.rating];
+    const rows = STATEMENTS.map((st, i) => {
+      const e = avg(COUNCILS, i), g = avg(regionList, i), s = c.s[i];
+      return { label: st.label, score: s, chip: chip(s), e: e.toFixed(1), g: g.toFixed(1),
+        aria: c.n + ' scored ' + s + ' out of 4. England average ' + e.toFixed(1) + ', region average ' + g.toFixed(1),
+        bar: 'position: absolute; left: 0; top: 0; bottom: 0; background: #E54F96; width: ' + (s / 4 * 100) + '%',
+        eng: 'position: absolute; top: -4px; bottom: -4px; width: 3px; background: #242140; left: calc(' + (e / 4 * 100) + '% - 1px)',
+        reg: 'position: absolute; top: 2px; width: 12px; height: 12px; border-radius: 50%; background: #FFFFFF; border: 2px solid #242140; box-sizing: border-box; left: calc(' + (g / 4 * 100) + '% - 6px)' };
+    });
+    return {
+      options: COUNCILS.map((x) => x.n), current: c.n, reportUrl: 'https://www.cqc.org.uk/care-services/local-authority-assessment-reports/' + c.u,
+      pickCouncil: (ev) => this.pick(ev.target.value),
+      c, ratingStyle: 'align-self: flex-start; padding: 6px 12px; font-weight: 600; font-size: 16px; background: ' + ratingCol[0] + '; color: ' + ratingCol[1],
+      areas: areasL.map(btn), strengths: strengthsL.map(btn), noAreas: areasL.length === 0, noStrengths: strengthsL.length === 0,
+      p, rows
+    };
+  }
+}
+</script>
+</body>
+</html>

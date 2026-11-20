@@ -1,0 +1,13 @@
+{
+ "COUNCILS": "c1cfbc76353e1898142e94b23fb9411d8f8b2b3f22b670faf36b12a2bd1d1785",
+ "STATEMENTS": "911ce2302d6cb14881e4ff26be9386120358828adee5cdf5a9b6beaf761050e7",
+ "STATEMENTS_without_intro": "e59751f565a5a5deb33201854a452501f4de13f33fb91ca478123fa33519ad17",
+ "POOL": "18c72268c1a4618c05e1641c09cd31c665abaa4a1c1e2cd930259a6ceedfe109",
+ "QUOTES": "ce8bb5b8e2c55ef687ea9281fcbe8b2ebfbbcf77e15e55793335bdf0d7979278",
+ "counts": {
+  "councils": 152,
+  "statements": 9,
+  "examples": 2255,
+  "quotes": 1890
+ }
+}

@@ -3,16 +3,33 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Method</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./assets/fonts.css">
+<title>Method | Learning from CQC local authority assessments</title>
+<meta name="description" content="How Edge Health analysed the 152 published CQC local authority assessment reports, including coverage, how scores were read, the use of AI and the limitations.">
+<link rel="canonical" href="https://edgehealth.github.io/cqc_dashboard/method.html">
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="./assets/favicon.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Edge Health">
+<meta property="og:title" content="Method | Learning from CQC local authority assessments">
+<meta property="og:description" content="How Edge Health analysed the 152 published CQC local authority assessment reports, including coverage, how scores were read, the use of AI and the limitations.">
+<meta property="og:url" content="https://edgehealth.github.io/cqc_dashboard/method.html">
+<meta property="og:image" content="https://edgehealth.github.io/cqc_dashboard/assets/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Learning from CQC local authority assessments. Edge Health.">
+<meta name="twitter:card" content="summary_large_image">
 <script src="./_runtime/react.js"></script>
 <script src="./_runtime/react-dom.js"></script>
 <script src="./_runtime/support.js"></script>
+<noscript><style>x-dc{display:none}</style></noscript>
 </head>
 <body>
+<noscript><p style="max-width: 640px; margin: 48px auto; padding: 0 24px; font: 400 18px/1.5 'Be Vietnam Pro', Arial, Helvetica, sans-serif; color: #242140">This dashboard needs JavaScript to show its charts and tables. Please turn JavaScript on in your browser and reload the page.</p></noscript>
 <x-dc>
 <helmet>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap" rel="stylesheet">
 <style>
 body{margin:0}
 a{color:#0E55DE}a:hover{color:#242140}
@@ -20,23 +37,25 @@ a{color:#0E55DE}a:hover{color:#242140}
 </style>
 </helmet>
 <div style="font-family: 'Be Vietnam Pro', Arial, Helvetica, sans-serif; color: #242140; background: #FFFFFF; min-height: 100vh">
-  <header style="border-bottom: 1px solid #D6D3DE; background: #FFFFFF">
+  <header>
+  <div style="border-bottom: 1px solid #D6D3DE; background: #FFFFFF">
     <div style="max-width: 1280px; margin: 0 auto; padding: 16px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
       <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap">
         <img src="./assets/6a800d17d0ea7ee4d047f0248e0653db.svg" alt="Edge Health" style="height: 28px; width: auto; display: block">
         <span style="font-size: 14px; color: #5C5975">Learning from CQC local authority assessments</span>
       </div>
       <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 4px">
-        <a href="Main.dc.html" style="padding: 12px 14px; font-size: 14px; text-decoration: none; color: #5C5975">National overview</a>
-        <a href="Council.dc.html" style="padding: 12px 14px; font-size: 14px; text-decoration: none; color: #5C5975">Council profile</a>
-        <a href="Statement.dc.html" style="padding: 12px 14px; font-size: 14px; text-decoration: none; color: #5C5975">Quality statements</a>
-        <a href="Method.dc.html" aria-current="page" style="padding: 12px 14px; font-size: 14px; font-weight: 600; text-decoration: none; color: #242140; border-bottom: 3px solid #E54F96">Method</a>
+        <a href="./" style="padding: 12px 14px; font-size: 14px; text-decoration: none; color: #5C5975">National overview</a>
+        <a href="council.html" style="padding: 12px 14px; font-size: 14px; text-decoration: none; color: #5C5975">Council profile</a>
+        <a href="statements.html" style="padding: 12px 14px; font-size: 14px; text-decoration: none; color: #5C5975">Quality statements</a>
+        <a href="method.html" aria-current="page" style="padding: 12px 14px; font-size: 14px; font-weight: 600; text-decoration: none; color: #242140; border-bottom: 3px solid #E54F96">Method</a>
       </nav>
     </div>
-  </header>
-  <div style="background: #EBE9EE; border-bottom: 1px solid #D6D3DE">
-    <div style="max-width: 1280px; margin: 0 auto; padding: 10px 32px; font-size: 14px; color: #242140">Based on all 152 published CQC local authority assessment reports. Scores and findings were extracted using AI, and a sample was checked manually. <a href="Method.dc.html" style="color: #0E55DE">How this was done</a></div>
   </div>
+  <div style="background: #EBE9EE; border-bottom: 1px solid #D6D3DE">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 10px 32px; font-size: 14px; color: #242140">Based on all 152 published CQC local authority assessment reports. Scores and findings were extracted using AI, and a sample was checked manually. <a href="method.html" style="color: #0E55DE">How this was done</a></div>
+  </div>
+  </header>
   <main style="max-width: 860px; margin: 0 auto; padding: 40px 32px 64px; display: flex; flex-direction: column; gap: 28px">
     <section style="display: flex; flex-direction: column; gap: 12px">
       <h1 style="margin: 0; font-size: 36px; font-weight: 300; letter-spacing: -0.02em">How this analysis was done</h1>
@@ -60,7 +79,7 @@ a{color:#0E55DE}a:hover{color:#242140}
     </section>
     <section style="display: flex; flex-direction: column; gap: 10px; padding-top: 24px; border-top: 1px solid #D6D3DE">
       <h2 style="margin: 0; font-size: 22px; font-weight: 400">Use of AI</h2>
-      <ol style="margin: 0; padding-left: 22px; font-size: 16px; line-height: 1.7; color: #5C5975"><li>AI tools were used to extract scores from the 152 reports, to select sentences from each report describing what CQC found, and to help draft the summaries on this site.</li><li>The rules for what to select were reviewed and refined over several rounds.</li><li>A sample of the findings and examples was checked manually against the original reports.</li><li>All sentences shown as CQC’s findings are quoted from the reports, with page numbers, so you can check them against the source.</li></ol>
+      <ol style="margin: 0; padding-left: 22px; font-size: 16px; line-height: 1.7; color: #5C5975"><li>AI tools were used to extract scores from the 152 reports, to select sentences from each report describing what CQC found, and to help draft the summaries on this site.</li><li>The rules for what to select were reviewed and refined over several rounds.</li><li>A sample of the findings and examples was checked manually against the original reports.</li><li>All sentences shown as CQC’s findings are quoted from the reports, with page numbers and a link to each report on the CQC website, so you can check them against the source.</li></ol>
     </section>
     <section style="display: flex; flex-direction: column; gap: 10px; padding-top: 24px; border-top: 1px solid #D6D3DE">
       <h2 style="margin: 0; font-size: 22px; font-weight: 400">Limitations</h2>
@@ -77,7 +96,7 @@ a{color:#0E55DE}a:hover{color:#242140}
   </main>
   <footer style="border-top: 1px solid #D6D3DE">
     <div style="max-width: 1280px; margin: 0 auto; padding: 24px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 13px; color: #5C5975">
-      <span>edgehealth.co.uk</span>
+      <a href="https://www.edgehealth.co.uk/" style="color: inherit">edgehealth.co.uk</a>
       <span>©2026 Edge Health</span>
     </div>
   </footer>
