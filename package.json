@@ -1,0 +1,12 @@
+{
+  "name": "cqc-dashboard",
+  "private": true,
+  "description": "Tests for the CQC local authority assessments dashboard. The site itself has no build step.",
+  "scripts": {
+    "test": "node --test --test-concurrency=1 tests/*.test.js",
+    "test:update-baseline": "UPDATE_BASELINE=1 node --test --test-concurrency=1 tests/*.test.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  }
+}
