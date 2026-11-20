@@ -141,7 +141,7 @@ a{color:#0E55DE}a:hover{color:#242140}
                   <span style="font-size: 13px; color: #B62A8E">{{e.area}}</span>
                   <p style="margin: 0; font-size: 14px; line-height: 1.55">{{e.text}}</p>
                   <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: auto">
-                    <a href="{{e.href}}" style="font-size: 14px; font-weight: 700; color: #242140; text-decoration: underline; text-decoration-color: #5C5975; text-underline-offset: 2px">{{e.c}}</a>
+                    <sc-if value="{{e.other}}" hint-placeholder-val="{{ true }}"><a href="{{e.href}}" style="font-size: 14px; font-weight: 700; color: #242140; text-decoration: underline; text-decoration-color: #5C5975; text-underline-offset: 2px">{{e.c}}</a></sc-if><sc-if value="{{e.self}}" hint-placeholder-val="{{ false }}"><span style="font-size: 14px; font-weight: 700">{{e.c}}</span></sc-if>
                     <span style="{{e.chip}}">Scored {{e.score}}</span>
                   </div>
                   <span style="font-size: 13px; color: #5C5975"><a href="{{e.report}}" style="color: inherit; text-underline-offset: 2px">{{e.c}} report</a>, page {{e.p}}</span>
@@ -234,7 +234,7 @@ class Component extends DCLogic {
     const higherN = COUNCILS.filter((x) => x.s[selIdx] > cur.score).length;
     const lowerN = COUNCILS.filter((x) => x.s[selIdx] < cur.score).length;
     const compare = (isArea ? higherN + ' of ' + COUNCILS.length + ' councils scored higher on this statement. ' : lowerN + ' of ' + COUNCILS.length + ' councils scored lower on this statement. ') + cur.st.desc;
-    const toCard = (n, e) => ({ c: n, href: '#' + slug(n), report: 'https://www.cqc.org.uk/care-services/local-authority-assessment-reports/' + byName[n].u, p: e[0], text: e[1], area: e[3] ? (areaName[e[2]] || '') : '', score: byName[n].s[selIdx], chip: pill(byName[n].s[selIdx]) });
+    const toCard = (n, e) => ({ c: n, self: n === c.n, other: n !== c.n, href: '#' + slug(n), report: 'https://www.cqc.org.uk/care-services/local-authority-assessment-reports/' + byName[n].u, p: e[0], text: e[1], area: e[3] ? (areaName[e[2]] || '') : '', score: byName[n].s[selIdx], chip: pill(byName[n].s[selIdx]) });
     let examples;
     if (isArea) {
       const all = [];
