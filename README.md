@@ -2,14 +2,32 @@
 
 Static site exported from a Claude Design canvas. No build step.
 
-- `index.html` – National overview (same page as `Main.dc.html`)
-- `Council.dc.html`, `Statement.dc.html`, `Method.dc.html` – the other pages
+Live at https://edgehealth.github.io/cqc_dashboard/
+
+## Pages
+
+- `index.html` – National overview
+- `council.html` – Council profile
+- `statements.html` – Quality statements
+- `method.html` – Method
+
+Each page holds its own markup, logic and data. The council data is repeated
+in `index.html`, `council.html` and `statements.html`, so a data change must
+be applied to all three.
+
+## Other files
+
 - `_runtime/` – scripts that render the pages
-- `assets/` – logo
-- `.nojekyll` – required on GitHub Pages; without it the `_runtime` folder is not served
+- `assets/` – logo, favicon, link-preview card and self-hosted fonts
+- `sitemap.xml` – page list for search engines
 
-## Deploy to GitHub Pages
+## Viewing locally
 
-1. Put these files at the root of a repository (keep `.nojekyll`).
-2. Settings > Pages > Source: "Deploy from a branch", branch `main`, folder `/ (root)`.
-3. The site appears at `https://<owner>.github.io/<repo>/`.
+Start a web server in this folder (for example `python3 -m http.server`) and
+open `http://localhost:8000`. Opening the files directly does not work.
+
+## Deploying
+
+Pushes to `main` are published to GitHub Pages by
+`.github/workflows/static.yml`. Only the top-level `*.html` files,
+`sitemap.xml`, `_runtime/` and `assets/` are published.

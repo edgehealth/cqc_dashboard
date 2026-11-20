@@ -18,5 +18,5 @@ Do not author or co-author commits as Claude in this repository.
 ## Publishing
 
 Pushes to `main` deploy straight to the public GitHub Pages site. The workflow
-in `.github/workflows/static.yml` publishes only the top-level `*.html` files,
+in `.github/workflows/static.yml` publishes only the top-level `*.html` files, `sitemap.xml`,
 `_runtime/` and `assets/`. Anything else in the repository is not published.
