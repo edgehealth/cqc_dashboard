@@ -133,8 +133,8 @@ a{color:#0E55DE}a:hover{color:#242140}
         </sc-for>
       </div>
       <div style="overflow-x: auto; border: 1px solid #D6D3DE">
-        <div role="table" aria-label="Quality statement scores by council" style="min-width: 1100px; font-size: 14px">
-          <div role="row" style="display: grid; grid-template-columns: 240px repeat(9, minmax(68px, 1fr)) 120px; background: #EBE9EE; border-bottom: 1px solid #D6D3DE; font-size: 12px; font-weight: 600; color: #5C5975">
+        <div role="table" aria-label="Quality statement scores by council" style="min-width: 1120px; font-size: 14px">
+          <div role="row" style="display: grid; grid-template-columns: 200px repeat(9, minmax(90px, 1fr)) 110px; background: #EBE9EE; border-bottom: 1px solid #D6D3DE; font-size: 12px; font-weight: 600; color: #5C5975">
             <div role="cell" style="padding: 10px 12px"></div>
             <div role="columnheader" aria-colspan="3" style="padding: 10px 8px; grid-column: span 3; border-left: 1px solid #D6D3DE">Working with people</div>
             <div role="columnheader" aria-colspan="2" style="padding: 10px 8px; grid-column: span 2; border-left: 1px solid #D6D3DE">Providing support</div>
@@ -142,15 +142,15 @@ a{color:#0E55DE}a:hover{color:#242140}
             <div role="columnheader" aria-colspan="2" style="padding: 10px 8px; grid-column: span 2; border-left: 1px solid #D6D3DE">Leadership</div>
             <div role="cell" style="padding: 10px 12px; border-left: 1px solid #D6D3DE"></div>
           </div>
-          <div role="row" style="display: grid; grid-template-columns: 240px repeat(9, minmax(68px, 1fr)) 120px; border-bottom: 1px solid #D6D3DE; font-size: 13px; font-weight: 600; align-items: end">
+          <div role="row" style="display: grid; grid-template-columns: 200px repeat(9, minmax(90px, 1fr)) 110px; border-bottom: 1px solid #D6D3DE; font-size: 12px; font-weight: 600; align-items: end">
             <div role="columnheader" style="padding: 10px 12px">Council</div>
             <sc-for list="{{statements}}" as="s" hint-placeholder-count="9">
-              <div role="columnheader" style="padding: 10px 8px; line-height: 1.25">{{s}}</div>
+              <div role="columnheader" style="padding: 10px 4px; line-height: 1.25">{{s}}</div>
             </sc-for>
             <div role="columnheader" style="padding: 10px 12px">Overall</div>
           </div>
           <sc-for list="{{rows}}" as="r" hint-placeholder-count="8">
-            <div role="row" style="display: grid; grid-template-columns: 240px repeat(9, minmax(68px, 1fr)) 120px; border-bottom: 1px solid #D6D3DE; align-items: center">
+            <div role="row" style="display: grid; grid-template-columns: 200px repeat(9, minmax(90px, 1fr)) 110px; border-bottom: 1px solid #D6D3DE; align-items: center">
               <div role="cell" style="padding: 8px 12px; font-weight: 600"><a href="{{r.href}}" style="color: #242140; text-decoration: underline; text-decoration-color: #5C5975; text-underline-offset: 2px">{{r.n}}</a></div>
               <sc-for list="{{r.cells}}" as="c" hint-placeholder-count="9">
                 <div role="cell" style="padding: 4px"><div style="{{c.style}}">{{c.score}}</div></div>

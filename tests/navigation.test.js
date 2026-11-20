@@ -125,3 +125,16 @@ test('headline figures follow the data when the data changes', async () => {
   await open('council.html');
   assert.ok((await page.locator('[aria-live="polite"]').innerText()).includes(' of ' + n + ' councils scored'));
 });
+
+test('heatmap column titles fit inside their columns at every width', async () => {
+  for (const width of [390, 768, 1000, 1280, 1440]) {
+    await page.setViewportSize({ width, height: 800 });
+    await open('index.html');
+    const overflowing = await page.evaluate(() => [...document.querySelectorAll('[role=table] [role=columnheader]')].filter((cell) => {
+      const range = document.createRange(); range.selectNodeContents(cell);
+      const textRight = Math.max(...[...range.getClientRects()].map((r) => r.right));
+      return textRight > cell.getBoundingClientRect().right - parseFloat(getComputedStyle(cell).paddingRight) + 0.5;
+    }).map((cell) => cell.textContent.trim()));
+    assert.deepEqual(overflowing, [], 'at ' + width + 'px wide');
+  }
+});

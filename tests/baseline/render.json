@@ -2,16 +2,16 @@
  "index.html": {
   "text": "Learning from CQC local authority assessments\nNational overview\nCouncil profile\nQuality statements\nMethod\nBased on all 152 published CQC local authority assessment reports. Scores and findings were extracted using AI, and a sample was checked manually. How this was done\nWhat CQC’s local authority assessments show about good adult social care\n\nCQC has now assessed how almost every council in England meets its Care Act duties. This dashboard brings the 152 published reports together, so councils can see how they compare, what higher-scoring councils do differently, and who to learn from.\n\nCQC scores each council from 1 to 4 on 9 quality statements: 1 means significant shortfalls, 2 some shortfalls, 3 a good standard and 4 an exceptional standard. The findings are CQC’s, quoted from its published reports. This site is intended to support learning between councils, not to rank them. Data as at 19 November 2026.\n\nCouncils assessed\n152\nReports published May 2024 to November 2026\nOverall ratings\nOutstanding 4 · Good 91 · Requires improvement 54 · Inadequate 3\nHighest scoring statement\nPartnerships and communities\nAverage 2.9 out of 4; 122 of 152 councils scored 3 or 4 (good or exceptional)\nLowest scoring statement\nAssessing needs\nAverage 2.2 out of 4; 117 of 152 councils scored 1 or 2 (significant or some shortfalls)\nMain findings\nAssessing needs\nHigher-scoring councils prioritised people on waiting lists by risk\n\nIn all 8 councils that scored 1 (significant shortfalls), CQC described people waiting whom no one was reliably checking on. In all 31 councils that scored 3 or 4 (good or exceptional) and had a waiting list, CQC described people being prioritised by risk.\n\nSee what they did\nLeadership\nCouncils that scored well on governance tended to score well elsewhere\n\nCouncils scoring 1 (significant shortfalls) on governance averaged 1.5 across the other eight quality statements. Those scoring 3 averaged 2.7, and those scoring 4 (exceptional) averaged 3.5. This shows an association, not cause and effect, and governance assessments draw partly on the same evidence.\n\nOutstanding councils\nWhat the four outstanding councils had in common\n\nBarking and Dagenham, Camden, Kensington and Chelsea and Wigan all scored 4 on partnerships and communities and on governance. Wigan was the only council to score 4 on assessing needs.\n\nPartnerships and communities\nPartnership working had the highest scores\n\n122 of 152 councils scored 3 or 4. The highest scorers included councils with joint leadership roles with health and integrated hospital discharge teams.\n\nScores by quality statement\n\nEach cell is CQC’s score from 1 (significant shortfalls) to 4 (exceptional standard). Choose a region to see its councils.\n\nScore\n1\nSignificant shortfalls\n2\nSome shortfalls\n3\nGood\n4\nExceptional\nNorth East (12)\nNorth West (24)\nYorkshire and the Humber (15)\nEast Midlands (9)\nWest Midlands (14)\nEast of England (11)\nLondon (33)\nSouth East (19)\nSouth West (15)\nWorking with people\nProviding support\nEnsuring safety\nLeadership\nCouncil\nAssessing needs\nHealthier lives\nEquity\nCare provision\nPartnerships\nSafe pathways\nSafeguarding\nGovernance\nLearning and innovation\nOverall\nSunderland\n3\n3\n3\n3\n3\n3\n3\n3\n3\n75%\nGood\nDarlington\n3\n3\n2\n3\n3\n3\n3\n3\n3\n73%\nGood\nHartlepool\n3\n3\n2\n2\n3\n3\n3\n3\n3\n70%\nGood\nNorthumberland\n2\n3\n2\n3\n3\n3\n3\n3\n3\n70%\nGood\nDurham\n2\n3\n2\n3\n3\n3\n2\n3\n3\n67%\nGood\nGateshead\n2\n2\n2\n3\n3\n3\n3\n3\n3\n67%\nGood\nNorth Tyneside\n2\n2\n3\n3\n3\n2\n2\n3\n3\n64%\nGood\nStockton-on-Tees\n2\n3\n2\n3\n3\n2\n3\n3\n2\n64%\nGood\nMiddlesbrough\n2\n3\n2\n2\n3\n3\n3\n2\n2\n62%\nRequires improvement\nRedcar and Cleveland\n3\n2\n2\n2\n2\n2\n3\n2\n3\n59%\nRequires improvement\nSouth Tyneside\n2\n2\n2\n2\n3\n2\n3\n2\n3\n59%\nRequires improvement\nNewcastle\n2\n2\n2\n2\n3\n2\n2\n2\n2\n53%\nRequires improvement\n\nTo see one council in detail, with councils to learn from, use the council profile.\n\nedgehealth.co.uk\n©2026 Edge Health",
   "states": {
-   "default": "3ef6a35e4020db2e",
-   "North East (12)": "3ef6a35e4020db2e",
-   "North West (24)": "5aa1e0cf787540fd",
-   "Yorkshire and the Humber (15)": "8d7b2e17b39bd6c2",
-   "East Midlands (9)": "3c5395dced82ee5c",
-   "West Midlands (14)": "a673fc77abbfb195",
-   "East of England (11)": "6c8ae8afd8fde1a1",
-   "London (33)": "7a2ed90247dbcfe8",
-   "South East (19)": "b0de0b5c0f8a0705",
-   "South West (15)": "00a290b789f08b38"
+   "default": "14dda0a9db3834a8",
+   "North East (12)": "14dda0a9db3834a8",
+   "North West (24)": "0596ac6d2a681996",
+   "Yorkshire and the Humber (15)": "66f9619d0ea3bd97",
+   "East Midlands (9)": "ef047e645c190f0c",
+   "West Midlands (14)": "9ceee1ed8e669740",
+   "East of England (11)": "9e20876fe89fd464",
+   "London (33)": "239ea5668c29f772",
+   "South East (19)": "064eeb38735a5491",
+   "South West (15)": "a2fed17fe24a2b39"
   }
  },
  "council.html": {
