@@ -26,6 +26,22 @@ calculated from them. Findings written as prose (on the overview, the method
 page and in `statements.js`) are not, but the tests fail if the figures in
 them stop matching the data.
 
+## Source reports
+
+`source_reports/` holds the 152 CQC local authority assessment reports (PDF)
+that the data was drawn from, as downloaded from https://www.cqc.org.uk. They
+are kept for checking the data against the source and are not published to the
+site. CQC may have corrected or reissued a report since; the CQC website is the
+authoritative copy.
+
+The reports are © Care Quality Commission and are reproduced unchanged.
+Contains public sector information licensed under the
+[Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/),
+as set out in CQC's
+[terms and conditions](https://www.cqc.org.uk/about-us/terms-conditions). This
+does not cover the CQC logo or any third-party material in the reports, and
+does not imply that CQC endorses this site.
+
 ## Other files
 
 - `_runtime/` – scripts that render the pages
