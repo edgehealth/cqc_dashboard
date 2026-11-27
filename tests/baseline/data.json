@@ -3,11 +3,11 @@
  "STATEMENTS": "8d3b502a516136c26ad34b84893e27afb054bd32274e8637f59cf95cfd1cb335",
  "STATEMENTS_without_intro": "271c263ade9d82135072eced377860716dd51f0543bb9b16fe9ccf2087843c72",
  "POOL": "d7593cbc5b600ba5d05291feaf48c7d68f39bba40604080a3591677c47d8bb79",
- "QUOTES": "c59ce3edff2ffd8dd9570e80ad200e249ff747c61c2ddee67dca7fe8f0b11d10",
+ "QUOTES": "7d8dcc446d15f278aaabd70113ff062c4fe4f1e6ae73f426ec1448ad73fb4ab0",
  "counts": {
   "councils": 152,
   "statements": 9,
   "examples": 2255,
-  "quotes": 1890
+  "quotes": 1888
  }
 }
