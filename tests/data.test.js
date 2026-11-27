@@ -58,14 +58,16 @@ test('council records are well formed', () => {
     assert.equal(c.rating, bands(c.pct), c.n + ' rating band');
     assert.ok(!Number.isNaN(Date.parse(c.pub)), c.n + ' publication date');
     assert.match(c.u, /^[a-z0-9-]+\/[a-z0-9-]+$/, c.n + ' CQC report path');
-    assert.ok(c.pg.every((p, i) => i === 0 || p > c.pg[i - 1]), c.n + ' page numbers increase');
+    // Three reports (Lancashire, Oxfordshire, Wokingham) print two sections in a different order, so pages need not increase.
+    assert.equal(new Set(c.pg).size, 9, c.n + ' section start pages are distinct');
   }
 });
 
 test('quotes and examples cover every council and statement', () => {
   for (const c of councils) {
     for (let i = 0; i < 9; i++) {
-      const lo = c.pg[i] - 1, hi = (i < 8 ? c.pg[i + 1] : c.pg[i] + 40) + 1;
+      const later = c.pg.filter((p) => p > c.pg[i]);
+      const lo = c.pg[i] - 1, hi = (later.length ? Math.min(...later) : c.pg[i] + 40) + 1;
       const q = quotes[c.n][i], ex = pool[c.n][i];
       if (c.s[i] <= 2) assert.ok(q.q.length > 0, c.n + ' statement ' + i + ' has no quotes');
       if (c.s[i] >= 3) assert.ok(ex.length > 0, c.n + ' statement ' + i + ' has no examples');

@@ -64,7 +64,8 @@ async function launch() {
 // Compare a value with a stored baseline file, or rewrite the file when UPDATE_BASELINE=1.
 function baseline(name, current) {
   const file = path.join(__dirname, 'baseline', name);
-  if (process.env.UPDATE_BASELINE === '1' || !fs.existsSync(file)) {
+  // A null value means the caller only wants to read the baseline, so never overwrite the file with it.
+  if (current !== null && (process.env.UPDATE_BASELINE === '1' || !fs.existsSync(file))) {
     fs.writeFileSync(file, JSON.stringify(current, null, 1) + '\n');
     return { stored: current, written: true };
   }
